@@ -1,5 +1,21 @@
-<div>
-  <% @students.each do |student| %>
-    <div><%= student.first_name + " " + student.last_name %></div>
-  <% end %>
-</div>
+
+<head>
+  <link rel="stylesheets" href="application.css" />
+</head>
+
+<body id= "background">
+  <div id= "title">
+  <h1>Students</h1>
+  </div>
+</body>
+
+<div class="row">
+  <div class="column">
+    <h2>List of Students</h2>
+    <ul>
+      <%@students.each do |student|%>
+      <li><%=student.first_name.capitalize%></li>
+      <%end%>
+    </ul>
+  </div>
+  

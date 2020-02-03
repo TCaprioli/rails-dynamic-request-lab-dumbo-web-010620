@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+#background {
+    background-color: powderblue;
+}
+
+#title {
+    overflow: hidden;
+    background-color: #333;
+    position: center; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+h1 {
+    text-align: center;
+    color: seashell;
+}
+.div {
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    background-color: seashell;
+    border-style: double;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
